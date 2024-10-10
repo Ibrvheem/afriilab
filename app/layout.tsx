@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-import { IBM_Plex_Sans, Raleway } from "next/font/google";
+import { Raleway } from "next/font/google";
+import { Toaster } from "@/components/ui/toaster";
 
 const raleway = Raleway({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -22,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${raleway.variable} antialiased`}>{children}</body>
+      <Toaster />
     </html>
   );
 }

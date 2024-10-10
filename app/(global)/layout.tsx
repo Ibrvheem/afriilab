@@ -6,6 +6,7 @@ import {
   CheckCircle2,
   CircleUser,
   Home,
+  Library,
   LineChart,
   LogOut,
   Menu,
@@ -51,7 +52,7 @@ const dashboardLinks = [
   },
   {
     label: "Study",
-    icon: <Package className="h-4 w-4" />,
+    icon: <Library className="h-4 w-4" />,
     path: "/study", // Active link
   },
   {

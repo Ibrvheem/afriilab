@@ -10,7 +10,7 @@ import {
 import Link from "next/link";
 import React from "react";
 
-export default function page() {
+export default async function page() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-1">
       <Card>
@@ -19,7 +19,7 @@ export default function page() {
             Biology
           </CardTitle>
           <CardDescription className="">
-            Answer questions about your completed study
+            Dahun ibeere nipa ikẹkọ ti o pari
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -29,7 +29,7 @@ export default function page() {
                 50
               </span>{" "}
             </div>
-            <span className="text-xs font-semibold">Questions Left</span>
+            <span className="text-xs font-semibold">Awọn ibeere toku</span>
           </div>
         </CardContent>
 

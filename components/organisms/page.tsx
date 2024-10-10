@@ -19,7 +19,7 @@ export const Page = ({
 }: PageProps) => {
   return (
     <>
-      <div className="pt-2 lg:pt-0 flex flex-col space-y-3">
+      <div className="relative pt-2 lg:pt-0 flex flex-col space-y-3 min-h-[85vh]">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
           <div className="flex flex-col space-y-2">
             <div className="flex justify-start items-center">

@@ -33,7 +33,7 @@ export default function ControlledSelect({
     <FormField
       name={name}
       render={({ field }) => (
-        <FormItem className="text-left">
+        <FormItem className="text-left font-raleway">
           <FormLabel className="text-sm font-normal">
             {label}{" "}
             {optional && (
@@ -46,7 +46,7 @@ export default function ControlledSelect({
                 <SelectValue placeholder={placeholder} />
               </SelectTrigger>
             </FormControl>
-            <SelectContent>
+            <SelectContent className="font-raleway font-medium">
               {values.map((val) => {
                 return (
                   <SelectItem value={val.value} key={val.value}>

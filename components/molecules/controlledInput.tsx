@@ -17,6 +17,7 @@ export default function ControlledInput({
   optional,
   disabled = false,
   type = "text",
+  className,
 }: {
   name: string;
   label?: string;
@@ -26,6 +27,7 @@ export default function ControlledInput({
   optional?: boolean;
   disabled?: boolean;
   type?: string;
+  className?: string;
 }) {
   return (
     <FormField
@@ -37,7 +39,7 @@ export default function ControlledInput({
           </FormLabel>
           <FormControl>
             <Input
-              className=" placeholder:text-muted-foreground relative"
+              className={`placeholder:text-muted-foreground relative ${className}`}
               disabled={disabled}
               placeholder={placeholder}
               defaultValue={defaultValue}
